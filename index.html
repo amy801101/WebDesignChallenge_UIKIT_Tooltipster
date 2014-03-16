@@ -2,18 +2,59 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" href="css/uikit.min.css" />
-	<script src="js/uikit.min.js"></script>
+	<link rel="stylesheet" href="css/uikit.docs.min.css" />
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/uikit.min.js"></script> 
+    <!--UIKIT has to be pushed after jQuery-->
+    
     <style type="text/css">
     	.backg{
-    		background: url(../images/bg.jpg);
+    	/*	background-image: url(http://uikit.gweb.io/img/bg.jpg);
+    		background-repeat-x: repeat; 
+    		background-repeat-y: no-repeat; 
+    	*/
+    	}
+    	body, html{
+    		height: 100%;
+    		background-image: url(http://uikit.gweb.io/img/bg.jpg);
+    		background-repeat-x: repeat; 
+    		background-repeat-y: no-repeat; 
+    		background-position-x: 50%;
+			background-position-y: 0%;
     	}
     </style>
 </head>
-<body>
-	<div class="backg">
-		<p>Hello!</p>
+<body class="page-blog">
+	<!--Navigation Bar Begin-->
+	<nav class="uk-navbar">
+		<a href="" class="uk-navbar-brand">Brandishere</a>
+		<ul class="uk-navbar-nav"> <!--Child nav in navbar-->
+			<li class="uk-parent uk-active" data-uk-dropdown="">
+			    <!--Parent Title-->
+			    <a href=""><i class="uk-icon-home"></i> Level1</a>
+			    <!--Dropdown ul begin, wraped by div-->
+			    <div class="uk-dropdown uk-dropdown-navbar" style="">
+			        <ul class="uk-nav uk-nav-navbar">
+			            <li><a href="#">Item</a></li>
+			            <li><a href="#">Another item</a></li>
+			            <li class="uk-nav-header">Header</li>
+			            <li><a href="#">Item</a></li>
+			            <li><a href="#">Another item</a></li>
+			            <li class="uk-nav-divider"></li>
+			            <li><a href="#">Separated item</a></li>
+			        </ul>
+			    </div>
+			    <!--Dropdown ul ends-->
+			</li>
+		</ul>
+		<div class="uk-navbar-content">
+			Some
+			<a href="">link</a>
+			.
+		</div>	
+	</nav>
+	<!--Navigation Bar End-->
+	<div class="uk-grid backg">
 	</div>
 </body>
 </html>
